@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stylemobile.css" />
+
+    
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "art1iky",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ul class="menu">
+          <li class="filter">
+            <p>filter</p>
+            <div class="filter-buttons">
+              <button class="active" data-category="all">All</button>
+              <p>동네</p>
+              <button data-category="정릉골">정릉골</button>
+              <button data-category="정릉시장">정릉시장</button>
+              <button data-category="경동시장">경동시장</button>
+              <p>조화</p>
+              <button data-category="우연한조화">우연한공존</button>
+              <button data-category="의도된조화">의도된공존</button>
+            </div>
+          </li>
+          <li class="logo"><p>신구(新舊)의 조화</p></li>
+          <li class="about">
+            <p>about</p>
+            <div class="about-caption">
+
+              <p>바쁘고 현대적인 도심 속에서도 고요하고 고즈넉한 옛 서울의 정취를 느낄 수 있는 장소들이 있습니다. 북한산 근처에 위치한 정릉은 그 중 한 곳입니다. 다니는 학교와 가까워 알게 되었지만, 세월의 흔적과 빠르고 조용히 변화하는 시장에서 느낄 수 있는 정릉만의 묘한 분위기에 매료되었습니다. 시간의 레이어가 쌓이면서 옛것과 새것이 조화롭게 어우러지는 모습들을 이곳저곳에서 발견할 수 있었습니다.
+                <br><br>
+                이러한 신구의 조화가 절묘하게 이루어진 모습들을, 정릉뿐만 아니라 서울의 다양한 동네에서 찾아가며 사진으로 담아내고자 합니다. 서울의 과거와 현재의 공존을 담은 사진들을 통해 현대적인 서울의 모습과 함께 고요하고 아름다운 옛 서울의 정취를 느끼고, 도시의 변화와 시간의 흔적을 되새겨볼 수 있을 것입니다.</p>
+              <h4>2023.6.14 ~</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="entrance">
+        <div class="title">
+          <h1 class="title-main">신구(新舊)의 조화</h1>
+          <h2 class="title-sub">옛것과 새것이 공존하는 서울</h2>
+        </div>
+        <div class="title-caption">
+          <p>바쁘고 현대적인 도심 속에서도 고요하고 고즈넉한 옛 서울의 정취를 느낄 수 있는 장소들이 있습니다. 북한산 근처에 위치한 정릉은 그 중 한 곳입니다. 다니는 학교와 가까워 알게 되었지만, 세월의 흔적과 빠르고 조용히 변화하는 시장에서 느낄 수 있는 정릉만의 묘한 분위기에 매료되었습니다. 시간의 레이어가 쌓이면서 옛것과 새것이 조화롭게 어우러지는 모습들을 이곳저곳에서 발견할 수 있었습니다.
+            <br><br>
+            이러한 신구의 조화가 절묘하게 이루어진 모습들을, 정릉뿐만 아니라 서울의 다양한 동네에서 찾아가며 사진으로 담아내고자 합니다. 서울의 과거와 현재의 공존을 담은 사진들을 통해 현대적인 서울의 모습과 함께 고요하고 아름다운 옛 서울의 정취를 느끼고, 도시의 변화와 시간의 흔적을 되새겨볼 수 있을 것입니다.</p>
+          <h4>2023.6.14 ~</h4>
+          <h4>제목을 클릭하여 계속</h4>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="item faster1" data-categories="정릉시장 우연한조화">
+            <img src="./img/20230524_07.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/37452627?c=18.38,0,0,0,dh&p=WSVI93kd1o-lgEIW2SevWA,-87.36,-7.32,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 685-83</h1>
+              <h2>대성이발관 앞 포르쉐 파나메라 GTS</h2>
+              <p>
+                정릉시장에서 가장 오래된 이발관. 화물트럭과 배달 오토바이가
+                지나가는 시장거리에서 지나가는 포르쉐는 독특한 인상을 남긴다.
+              </p>
+              <h4 data-date="2023-05-24">2023-05-24</h4>
+            </div>
+          </div>
+          <div class="item slowest" data-categories="정릉시장 의도된조화">
+            <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzAzMzBfMTIw%2FMDAxNjgwMTY3ODkxMTQz.vkFk5dbtCguQyNYF-No0MErtUGFGMImSmHCI88RgwEEg.jqLQb_kMY-RP5C4osyT5aXuLu0nm-KXt4ScXNwk5wLMg.JPEG%2FIMG_6093.jpeg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/1963251216?c=17.7,0,0,0,dh&p=FIOl95VMaDLLHGVVGOjBvw,36.94,-0.76,61.19,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 372-37</h1>
+              <h2>도이칠란드 박</h2>
+              <p>수제소세지와 함께 샤퀴테르를 직접 만들어 판매하는 양식 전문점이다. 고풍스러운 한옥에서 먹는 수제소세지와 맥주의 조합은 상당히 매력적이다. 가격도 정말 합리적인 편인데, 들리는 소문으로는 가족분이 정릉시장에서 정육점을 운영하신다고.</p>
+              <h4>2023-06-14</h4>
+            </div>
+          </div>
+          <div class="item faster1" data-categories="정릉동 우연한조화">
+            <img src="./img/20230524_08.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/19514355?c=19.98,0,0,0,dh&isCorrectAnswer=true&p=AQUPRm03aUFq4y3oUI_Xvg,57.95,11.75,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 966-7</h1>
+              <h2>굴뚝만 남아있는 목욕탕</h2>
+              <p>길음역 근처에 위치한 목욕탕. 현재는 사용되지 않고 있지만, 검게 그을린 흔적들이 굴뚝이 지내온 세월을 알려준다.</p>
+              <h4>2023-05-24</h4>
+            </div>
+          </div>
+          <div class="item slower" data-categories="경동시장 우연한조화">
+            <img src="./img/20230525_04.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/20827267?c=16.43,0,0,0,dh&isCorrectAnswer=true&p=AYr8DtMReYfVkB4wuH7jsA,97.41,3.16,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 동대문구 제기동 920-1</h1>
+              <h2>경동시장 뒤에 위치한 롯데캐슬</h2>
+              <p>시장 거리 뒤에는 높은 아파트 단지가 자리하고 았다. 이 두 장소 높이의 차이는 도시의 발전과 변화를 상징적으로 보여준다.</p>
+              <h4>2023-05-25</h4>
+            </div>
+          </div>
+          <div class="item faster1" data-categories="정릉시장 의도된조화">
+            <img src="./img/20230614_01.png" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/1429679794?c=17.99,0,0,0,dha&p=mdY4DSevOfnO76Nyr0GC2g,57.05,15.73,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 405-8</h1>
+              <h2>이마트 편의점과 이스터디카페</h2>
+              <p>이마트 편의점 건물 4층에 위치한 이스터디카페이다. 건물주분이 별도로 2,3층에 개설하신 것으로 추측된다.<br>1층 편의점 카운터에서 요금을 결제하고 이용할 수 있는 방식이며, 가성비가 정말 좋은 편이다. 편의점 문을 열 때 나오는 멜로디와 이스터디카페 간판에 있는 소문자 'e'는 정릉 특유의 사랑스러운 매력을 더해주는 요소이다.</p>
+              <h4>2023-06-14</h4>
+            </div>
+          </div>
+          <div class="item slower1" data-categories="정릉골 우연한조화">
+            <img src="./img/20230602_01.jpg" />
+            <a
+              class="map"
+              href="https://www.google.com/maps/@/data=!3m8!1e1!3m6!1sAF1QipP6kLyPbK9Pq1vsY5Ef7k5ncZggdq1N5JS3_P5F!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP6kLyPbK9Pq1vsY5Ef7k5ncZggdq1N5JS3_P5F%3Dw203-h100-k-no-pi-4.0281615-ya183.42052-ro1.3396975-fo100!7i5376!8i2688?entry=ttu"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 757-22</h1>
+              <h2>정릉골 골목길</h2>
+              <p>정릉골은 북한산국립공원 자락에 위치한 달동네이다. 서울에 얼마남지 않은 달동네 중 한 곳으로, 골목길이 상당히 긴 편이다</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item" data-categories="경동시장 의도된조화">
+            <img src="https://static.news.zumst.com/images/10/2022/12/16/8ec5680dcbed4dbfba0a9dfe446a5577.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/search/%EA%B2%BD%EB%8F%99%EC%8B%9C%EC%9E%A5%20%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4/place/1074329215?c=15,0,0,0,dh&placePath=%3Fentry=bmp&p=Wc3kWpnfZOau9KzlsFGEkQ,101.47,4.36,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 동대문구 제기동 1036</h1>
+              <h2>스타벅스 경동1960점</h2>
+              <p>경동극장이 있던 자리에 들어선 스타벅스. 오래되고 익숙한 것에 새로운 감성을 더해 재미를 선사한다.</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item slower" data-categories="정릉골 우연한조화">
+            <img src="./img/20230602_02.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/search/%EC%A0%95%EB%A6%89%EB%8F%99%20757-22/address/14137969.813625235,4525004.856833929,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A0%95%EB%A6%89%EB%8F%99%20757-22,jibun?c=18.07,0,0,0,dha&isCorrectAnswer=true&p=00oOn3_f6haZr2VqSImBDw,-86.88,-39.57,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 757-22</h1>
+              <h2>주택 가림막에 그려진 벽화</h2>
+              <p>사람들이 점점 빠지는 달동네에서는 벽화를 많이 발견할 수 있다. 이 벽화들은 완성도가 높게 그려져 있지만, 뭔가 을씨년스러운 분위기를 풍긴다.</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item faster1" data-categories="정릉골 우연한조화">
+            <img src="./img/20230602_03.jpg" />
+            <a
+              class="map"
+              href="cO!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaFpppgE9S49qFD_cYL-T1bm0M5L6HvZWhG3cO%3Dw203-h100-k-no-pi6.606844-ya39.83413-ro-3.166615-fo100!7i5376!8i2688?entry=ttu"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울특별시 성북구 정릉동 745-32</h1>
+              <h2>정릉골에서 바라본 시내 풍경</h2>
+              <p>높은 달동네 거리에서 시내를 바라보면, 분명히 시내로부터 걸어 올라온 위치임에도 불구하고, 마치 분리된 공간처럼 느껴진다.</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item slower" data-categories="정릉골 우연한조화">
+            <img src="./img/20230602_04.jpg" />
+            <a
+              class="map"
+              href="https://www.google.com/maps/@/data=!3m8!1e1!3m6!1sAF1QipP-q06skvz20nGbi4lQ3TXlYelxqTS53vQT-MHY!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP-q06skvz20nGbi4lQ3TXlYelxqTS53vQT-MHY%3Dw203-h100-k-no-pi-0.8748303-ya108.75419-ro-3.505067-fo100!7i5376!8i2688?entry=ttu"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 757-4</h1>
+              <h2>마루와 마당이 있는 빈집</h2>
+              <p>지금은 빈집이지만, 옛날에는 어떤 생활이 있었을까 궁금증이 생기는 평온한 모습의 터 좋은 집이다.</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item slower1" data-categories="정릉시장 의도된조화">
+            <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMjFfMTA3%2FMDAxNjY2MzE5MzMwOTE0.l1luOKeGUdY97tvhYcvFIQnjlWWO6qvdwJvrgQs0yKIg.WVzr6iLU19jtKQGFNd-gJTI1v2OkungsXNX4e0UtMzMg.JPEG%2F20221020_160213.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/entry/place/37452627?c=15,0,0,0,dh&p=WSVI93kd1o-lgEIW2SevWA,-88.09,-9.49,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 정릉동 348-1</h1>
+              <h2>슬로카페 달팽이</h2>
+              <p>정릉천변 느티나무 아래 위치한 한옥 카페이다. 가게 내부의 들쑥날쑥한 인테리어는 이 조화를 더욱 절묘하게 만든다.</p>
+              <h4>2023-06-14</h4>
+            </div>
+          </div>
+          <div class="item fastest" data-categories="정릉골 우연한조화">
+            <img src="./img/20230602_05.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/search/%EC%A0%95%EB%A6%89%EB%8F%99%20761-1/address/14137684.000832621,4525181.419602215,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A0%95%EB%A6%89%EB%8F%99%20761-1,jibun?c=19,0,0,0,dha&isCorrectAnswer=true&p=AsEPar482JYHY6sJ8UBe_A,32.54,-1.21,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 성북구 정릉동 761-1</h1>
+              <h2>정릉천 건너 산장아파트</h2>
+              <p>정릉골 지역의 시작은, 산장아파트 앞에 있는 정릉천을 넘어 온 순간이라고 생각한다. 이 아파트도 오래되었지만 다리를 건너면 더 이상 높은 건물을 찾아볼 수 없다.</p>
+              <h4>2023-06-02</h4>
+            </div>
+          </div>
+          <div class="item slowest" data-categories="송파동 우연한조화">
+            <img src="./img/20230611_01.jpg" />
+            <a
+              class="map"
+              href="https://map.naver.com/v5/search/%EC%86%A1%ED%8C%8C%ED%95%9C%EC%96%912%EC%B0%A8/place/18855524?c=17.3,0,0,0,dha&placePath=%3Fentry=bmp&p=0hcnS-Ku1qsLuspop6t11Q,-56.34,6.1,80,Float"
+              target="_blank"
+            ></a>
+            <div class="caption">
+              <h1>서울 송파구 송파동 119</h1>
+              <h2>한양아파트 사이 보이는 롯데타워</h2>
+              <p>한양1차아파트 정문 방향으로 들어오면, 아파트 단지를 두고 그 사이에 우뚝 솟아있는 롯데타워를 볼 수 있다.<br>
+                양쪽으론 과거의 흔적과 옛 정취가 느껴지는 구옥 아파트가 있고, 그 사이 현대적인 스카이라인을 갖춘 타워가 솟아있으니 이곳을 바라보면 그 대비가 신선하게 다가온다. 이 두 건물의 대조적인 모습은 시간과 발전의 흐름을 상징하며, 한 눈에 서울의 변화와 다양성을 경험할 수 있는 장면을 제공한다.</p>
+              <h4>2023-06-11</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
