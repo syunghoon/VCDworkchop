@@ -1,5 +1,6 @@
 /* 모바일 스타일 */
 @media screen and (max-width: 768px) {
+
     .menu {
         pointer-events: auto;
         cursor: pointer;
@@ -32,6 +33,7 @@
         display: block;
         width: 100vw;
         height: 100vh;
+        transform: rotate(0deg) translateY(0vh);
         transform-origin: top left;
         overflow-y: auto;
         overflow-x: hidden;
@@ -43,12 +45,13 @@
 
     .grid {
         position: relative;
-        /* right: 20%; */
+        left: 0%;
         width: 100vw;
-        /* transform: rotate(90deg) translateY(-100vh); */
+        height: 200vh;
+        transform: rotate(0deg) translateY(0vh);
         transform-origin: top left;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -64,18 +67,98 @@
         font-family: "source-han-serif-hong-kong", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 100px;
         letter-spacing: 1px;
         margin-bottom: 1px;
     }
 
     .title {
+        top: 5%;
         left: 5%;
     }
 
     .title-caption {
-        width: 310px;
+        width: 70vw;
+        opacity: 1;
+        position: fixed;
+        top: 20%;
+    }
+
+    .entrance {
+        z-index: 9999;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./BG/20230525_04.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        animation: backgroundAnimation 40s linear infinite;
+        transition: opacity 1s ease-in-out;
         opacity: 1;
     }
+
+    .caption {
+        position: fixed;
+
+        opacity: 1;
+
+        width: 60vw;
+        transform-origin: top left;
+        display: none;
+        padding: 30px 20px;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 170%;
+        letter-spacing: 1px;
+        margin-bottom: 1px;
+    }
+
+    h2 {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 170%;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 170%;
+        letter-spacing: 0.8px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .item>img {
+        max-width: 45vw;
+    }
+
+    .item {
+        margin-bottom: 30vh;
+    }
+
 }

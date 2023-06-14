@@ -34,6 +34,8 @@ filterButtons.forEach(button => {
     $('.item').mouseover(function () {
         const item = $(this);
 
+
+
         // 이미 캡션을 추가한 경우에는 추가적인 처리를 하지 않음
         if (item.data('captionAdded')) {
             return;
@@ -41,20 +43,27 @@ filterButtons.forEach(button => {
         const captionDiv = item.find('.caption'); // 아이템 내에서 캡션 div를 찾습니다.
         const captionClone = captionDiv.clone(); // 캡션 div를 복사합니다.
 
-        // 문서의 Mousemove 이벤트 핸들러
-        $(document).mousemove(function (event) {
-            const mouseX = event.clientX; // 마우스의 X 좌표
-            const mouseY = event.clientY; // 마우스의 Y 좌표
-
-            // 캡션의 위치를 body 좌표 기준으로 설정합니다.
-            captionClone.css({
-                top: mouseY + 50 + 'px',
-                left: mouseX + 50 + 'px',
-                display: 'inline-block'
-            });
-        });
-
         $('body').append(captionClone); // 캡션 div를 body에 추가합니다.
+
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            captionClone.css({
+                display: 'inline-block',
+                top: 40 + 'vh',
+                left: 15 + 'vw'
+            });
+        } else {
+                    // 문서의 Mousemove 이벤트 핸들러
+    $(document).mousemove(function (event) {
+        const mouseX = event.clientX; // 마우스의 X 좌표
+        const mouseY = event.clientY; // 마우스의 Y 좌표
+        captionClone.css({
+            top: mouseY + 50 + 'px',
+            left: mouseX + 50 + 'px',
+            display: 'inline-block'
+        });
+    });
+
+        }
 
         // 아이템에서 Mouseout 이벤트 핸들러
         item.mouseout(function () {
