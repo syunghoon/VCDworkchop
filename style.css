@@ -6,6 +6,7 @@
 
 * {
   font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
 }
 
 /* hide scrollbar */
@@ -175,8 +176,6 @@ body {
 .slowest {
   transform: translateZ(-0.2px) scale(1.2) translateX(20vw) translateY(0vh);
 }
-
-/*부가요소*/
 
 .caption {
   position: fixed;
